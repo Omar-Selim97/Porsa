@@ -239,6 +239,9 @@ nav .iconOut {
     .sticky .iconOut a {
         display: none !important;
     }
+    #hero {
+        min-height: 60vh;
+    }
 }
 
 
@@ -973,6 +976,44 @@ footer .logo {
 @media (max-width:300px) {
     .social form a {
         font-size: 10px;
+    }
+    .outHeading {
+        font-size: 22px !important;
+    }
+    .headlineAsk {
+        font-size: 22px !important;
+    }
+    p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .rowf {
+        display: block !important;
+    }
+    .heading h1,
+    .heading .h1 {
+        font-size: 22px !important;
+    }
+    .cd .h1 {
+        font-size: 22px !important;
+    }
+    footer .rowf::after {
+        content: "";
+        position: absolute;
+        border-right: 1px solid #0099FF;
+        height: 80px;
+        left: 10%;
+        top: 0;
+        z-index: 1;
+    }
+    .iconM {
+        margin-bottom: 10px;
+    }
+    .iconM .icon {
+        display: none;
+    }
+    body {
+        overflow-x: hidden !important;
     }
     footer .logo {
         max-width: 65px;
