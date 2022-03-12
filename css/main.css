@@ -222,10 +222,10 @@ nav .iconOut {
 
 @media (max-width: 358px) {
     nav .iconOut {
-        display: none;
+        display: none !important;
     }
     nav .logo {
-        max-width: 60px;
+        max-width: 60px !important;
     }
     nav .iconOut a {
         padding: 4px;
@@ -367,6 +367,13 @@ nav .iconOut {
 @media (max-width: 992px) {
     #work .vl {
         display: none;
+    }
+}
+
+@media (max-width:575px) {
+    #work .container {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -542,6 +549,12 @@ nav .iconOut {
 @media (max-width: 992px) {
     #office .vl {
         display: none;
+    }
+}
+
+@media (max-width:575px) {
+    #office {
+        padding: 5%;
     }
 }
 
@@ -954,6 +967,30 @@ footer .logo {
     }
     .socialP {
         display: none;
+    }
+}
+
+@media (max-width:300px) {
+    .social form a {
+        font-size: 10px;
+    }
+    footer .logo {
+        max-width: 65px;
+        margin-top: -20px;
+    }
+    .contact a {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .social .ver {
+        display: none;
+    }
+    .finish a {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    .finish {
+        display: block !important;
     }
 }
 
