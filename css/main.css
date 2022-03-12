@@ -670,10 +670,27 @@ nav .iconOut {
     color: #fff;
 }
 
+.carousel {
+    display: none;
+}
+
 @media (max-width: 575px) {
     .cd .h1 {
         font-size: 40px !important;
         padding-bottom: 0 !important;
+    }
+    .carousel {
+        display: block;
+    }
+    .cardLarge {
+        display: none;
+    }
+    .carousel-indicators button {
+        background-color: #002050 !important;
+        margin-top: 5px;
+    }
+    .carousel-item {
+        background-color: transparent !important;
     }
 }
 
