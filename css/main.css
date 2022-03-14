@@ -14,6 +14,10 @@ body {
 
 /*Heading for all section*/
 
+.menuButton {
+    display: none !important;
+}
+
 .outHeading {
     display: none;
 }
@@ -24,8 +28,16 @@ body {
         color: #213D67;
         font-weight: 700;
     }
+    .menuButton {
+        display: inline-block !important;
+    }
     .innerHeading {
         display: none;
+    }
+    nav {
+        background-color: var(--main-color) !important;
+        border-bottom-right-radius: 10%;
+        border-bottom-left-radius: 15%;
     }
 }
 
@@ -34,6 +46,9 @@ body {
         display: block;
         color: #213D67;
         font-weight: 700;
+    }
+    .menuButton {
+        display: inline-block !important;
     }
     .innerHeading {
         display: none;
@@ -71,7 +86,7 @@ body {
 .sticky {
     padding: 8px 10px;
     background-color: #0D2038;
-    border-bottom-right-radius: 10%;
+    border-bottom-right-radius: 15%;
     border-bottom-left-radius: 15%;
 }
 
@@ -151,6 +166,117 @@ nav button {
 nav button svg {
     color: #fff;
     font-size: 25px;
+}
+
+nav .offcanvas {
+    background-color: #0D2038;
+    max-width: 60%;
+    position: fixed;
+}
+
+nav .offcanvas h5 .menuLogo {
+    max-width: 80px;
+}
+
+nav .offcanvas .backTigger img {
+    max-width: 140px;
+}
+
+nav .offcanvas .offcanvas-body button {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+nav .offcanvas .offcanvas-body button a {
+    color: var(--main-color) !important;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav .offcanvas .offcanvas-body button a:hover {
+    color: #222 !important;
+    font-weight: bolder;
+    font-size: 16px !important;
+}
+
+nav .offcanvas .offcanvas-body .divLink {
+    height: 40px;
+    padding-top: 3px;
+    background: #162538;
+    position: relative;
+    border: 3px solid;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-left-color: #162538;
+    border-right-color: #fff;
+    text-align: center;
+}
+
+nav .offcanvas .offcanvas-body .divLink a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav .offcanvas .offcanvas-body .divLink a:hover {
+    color: blueviolet;
+}
+
+nav .offcanvas .offcanvas-body .divLink:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3%;
+    border: 2px solid #fff;
+    height: 15px;
+}
+
+.btn-close {
+    position: absolute;
+    top: 50%;
+    left: -1%;
+    transform: translate(-50%, -50%);
+    z-index: 50000;
+}
+
+.btn-close svg {
+    font-weight: bolder;
+}
+
+nav .offcanvas .btn-close {
+    box-sizing: content-box;
+    width: 30px;
+    height: 30px;
+    padding: .25em .25em;
+    color: #fff;
+    font-weight: bolder;
+    background: url('') !important;
+    background-color: #0D2038 !important;
+    border: 0;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+nav .offcanvas .offcanvas-body .chat .dot {
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+nav .offcanvas .offcanvas-body .chat .dot svg {
+    color: var(--main-color) !important;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
 }
 
 .navbar-toggler:focus {

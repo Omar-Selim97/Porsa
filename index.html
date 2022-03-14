@@ -20,20 +20,83 @@
 
     <!--Landing page-->
     <section id="hero" class=" text-center  text-sm-start">
-        <nav class="navbar container-fluid  fixed-top navbar-expand-lg navbar-transperant bg-transperant text-white">
+        <nav class="navbar container-fluid  fixed-top navbar-expand-lg bg-trnsperant main-navigation text-white">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon ">
-    
+                    <button class="btn btn-transperant menuButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                               </svg>
                         </span>
                     </button>
+
+
+
                     <img class="logo" src="./img/logo.png" alt="logo">
 
                 </a>
+                <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close bg-light " data-bs-dismiss="offcanvas" aria-label="Close">
+                            <span class="dot">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                  </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="text-center column align-items-center justify-content-center">
+                        <div class="offcanvas-body">
+                            <h5 class="offcanvas-title my-4" id="offcanvasWithBothOptionsLabel">
+                                <img class="menuLogo" src="./img/logo.png" alt="menuLogo">
+                            </h5>
+                            <button class="btn btn-light my-2">
+                                <a class=" fw-bold text-decoration-none" href="/">انضم إلينا</a>
+                            </button>
+                            <button class="btn btn-light my-2">
+                                <a class=" fw-bold text-decoration-none" href="/">تسجيل الدخول</a>
+                            </button>
+                            <div class="divLink my-3">
+                                <a href="/">
+                                    الصفحة الرئيسية
+                                </a>
+                            </div>
+                            <div class="divLink my-3">
+                                <a href="/">
+                                    مدونة البورصجى المجانية
+                                </a>
+                            </div>
+                            <div class="divLink my-3">
+                                <a href="/">
+                                    مكتبة البورصجى
+                                </a>
+                            </div>
+                            <div class="divLink my-3">
+                                <a href="/">
+                                    من نحن
+                                </a>
+                            </div>
+                            <div class="divLink my-3">
+                                <a href="/">
+                                    اتصل بنا
+                                </a>
+                            </div>
+                            <div class="backTigger">
+                                <img src="./img/menu.png" alt="">
+                            </div>
+                            <div class="chat text-start">
+                                <a href="#" class="dot text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
+                                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                      </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <form class="iconOut">
                     <a href="/" class="fa fa-facebook "></a>
                     <a href="https://twitter.com/home" class="fa fa-twitter"></a>
